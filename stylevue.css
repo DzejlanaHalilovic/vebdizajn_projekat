@@ -1,0 +1,167 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: url(INFORMATIKA.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: rgba(175, 188, 194, 0.7);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 25px;
+  -webkit-text-stroke: black 2px;
+  color: white;
+  border-bottom: 10px solid white;
+}
+nav:hover
+{
+  background-color: #0b6e9d;
+}
+#app {
+  margin: 0 auto;
+}
+
+.header {
+  margin: 30px auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color:  rgba(175, 188, 194, 0.7);
+  border: 2px solid white;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+
+#clanovi ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#clanovi > li {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  background: rgba(255, 255, 255, 0.9);
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+}
+#clanovi > li:hover
+{
+  background-color:rgba(175, 188, 194, 0.7) ;
+}
+
+#clanovi h2 {
+  font-size: 2rem;
+  color: black;
+  margin: 10px 15px;
+}
+
+#clanovi button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: #0b6e9d;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+#clanovi button:hover
+{
+  background-color:rgba(255, 255, 255, 0.9);
+
+}
+#clanovi button:hover,
+#clanovi button:active {
+  background-color: #02415e;
+}
+
+.fa-phone-alt,
+.fa-envelope {
+  color: #02415e;
+  font-size: 1.4rem;
+}
+
+.inner {
+  font-size: 1.2rem;
+}
+
+.inner li {
+  margin: 0px auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.inner img {
+  border-radius: 15px;
+  border: 5px solid #0b6e9d;
+}
+
+
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  font-size: 1rem;
+  background-color: rgba(175, 188, 194, 0.7);
+}
+footer:hover
+{
+  background-color: #0b6e9d;
+}
+
+@media only screen and (max-width: 1000px) {
+  #thanks {
+    width: 600px;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #thanks {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .inner img {
+    width: 250px;
+  }
+  nav {
+    font-size: 1.1rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>courses</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <!-- swiper js link  -->
+
+
+
+
+</head>
+<body>
+    
+    <nav id="nav" style="max-height: 80px;">
+        <div id="navButton">
+            <img src="menu.svg" alt="">
+        </div>
+        
+        <div class="navMargins"></div>
+        
+        <a href="#home">
+            <img id="navLogo" src="logoslika2.png" alt="">
+        </a>
+        <div class="filler"></div>
+        
+        <a href="index.html">
+            <div class="navItem">Pocetna</div>
+        </a>
+        <a href="onama.html">
+            <div class="navItem">O nama</div>
+        </a>
+        <a href="oblasti.html">
+            <div class="navItem">Oblasti</div>
+        </a>
+        <a href="kursevi.html">
+            <div class="navItem"> Kursevi</div>
+        </a>
+        <a href="kontakt.html">
+            <div class="navItem">Kontakt</div>
+        </a>
+        <a href="kontakt.html" class="active-lang" id="srb">SRB </a>
+        <a href="kontaktengleski.html" class="engleski" id="eng">ENG</a>
+          <div class="navMargins"></div>
+    </nav >
+        <section class="heading-link">
+            <p> <a href="index.html">Pocetna</a> /Kontakt</p>
+         </section>
+            <script src="javascript.js"></script>
+            <section class="contact" id="contact">
+                <br>
+                <br>
+                <br>
+                <br>
+            <br>
+              
+                <div class="row">
+                  
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.8448994064556!2d20.515476415406056!3d44.78396727909884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70bd4e62ad65%3A0x923dfee25db9331f!2z0JHRg9C70LXQstCw0YAg0LrRgNCw0ZnQsCDQkNC70LXQutGB0LDQvdC00YDQsA!5e0!3m2!1ssr!2srs!4v1642501485827!5m2!1ssr!2srs"   allowfullscreen="" loading="lazy"></iframe>
+            
+                    <form id="forma" name="myForm">
+                        <h3>Stupite u kontakt</h3>
+                    
+                        <div class="inputBox">
+                            <span  class="fas fa-user"></span>
+                            
+                            <input type="text" id="name" name="name" placeholder="Ime" onkeyup="validnoIme(this)"><br>
+                            <div class="error">
+                                <p id="nameerror"></p>
+                            </div>
+                        </div>
+                    
+                        <div class="inputBox">
+                            <span class="fas fa-envelope"></span>
+                            
+                            <input type="text" id="izraz" name="email" placeholder="Email" onkeyup="validanMejl(this)"><br>
+                        <div class="error">
+                            <p id="mailerror"></p>
+                        </div>
+                        </div>
+                    
+                        <div class="inputBox">
+                            <span class="fas fa-phone"></span>
+                            <textarea class="poruka"  id="comment" name="text" placeholder="Poruka" onkeyup="validnaPoruka(this)"></textarea>
+                        </div>
+                    
+                        <input id="broj" type="submit" value="kontaktirajte nas" class="btn"/>
+                                
+                    </form>
+                 
+            
+            </section>
+            
+
+
+
+            <section class="footer">
+
+                <div class="box-container">
+             
+                   <div class="box" data-aos="fade-up" data-aos-delay="150">
+                      <h3>Korisni linkovi</h3>
+                      <a class="link" href="index.html"> <i class="fas fa-angle-right"></i> Pocetna</a>
+                      <a class="link" href="onama.html"> <i class="fas fa-angle-right"></i> O nama</a>
+                      <a class="link" href="oblasti.html"> <i class="fas fa-angle-right"></i> Oblasti</a>
+                      <a class="link" href="kursevi.html"> <i class="fas fa-angle-right"></i> Kursevi</a>
+                      <a class="link" href="kontakt.html"> <i class="fas fa-angle-right"></i> Kontakt</a>
+                   </div>
+            
+                 <div class="box" data-aos="fade-up" data-aos-delay="450">
+                      <h3>Kontakt</h3>
+                      <a class="link" href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                      <a class="link" href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                      <a class="link" href="#"> <i class="fas fa-envelope"></i> stem2022@gmail.com </a>
+                      <a class="link" href="#"> <i class="fas fa-map"></i> Srbija- Beograd </a>
+                     
+                      
+                     </div>
+                  <div class="box" data-aos="fade-up" data-aos-delay="450">
+                        <h3>follow us</h3>
+                        <a  class="link" href="#"><i  class="fab fa-facebook-f"></i>facebook</a>
+                        <a class="link" href="#" > <i class="fab fa-twitter"></i>twitter</a>
+                        <a class="link" href="#"><i class="fab fa-instagram"></i>instagram</a>
+                        <a  class="link" href="#"> <i class="fab fa-linkedin"></i>linkedin</a>
+                    </div>  
+                     </div>
+                     <p class="credit">  <a href="omeni.html"> <span> Dzejlana Halilovic</span> </a>sva prava zadrzana </p>
+             
+             </section>
+            
+            
+        <!-- custom js file link  -->
+        <script src="javascript.js"></script>
+    </body>
+</html>

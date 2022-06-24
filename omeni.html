@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naš tim</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="stylevue.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <img src="racunar.jfif" style="float: left; height: 60px; width: 80px;" alt="">
+      <div class=".left"><h1>TimProgramera</h1></div>
+    
+    </nav>
+    <section id="app">
+      <div class="header">
+        <h1>Upoznaj naš tim</h1>
+        
+      </div>
+      <ul id="clanovi">
+        <member
+          v-for="mem in members"
+          :key="mem.id"
+          :name="mem.name"
+          :phone="mem.phone"
+          :email="mem.email"
+          :image="mem.image"
+        ></member>
+      </ul>
+
+      
+    </section>
+    <footer>
+      <h2>Copyright &copy; TimProgramera</h2>
+    </footer>
+  </body>
+</html>
