@@ -975,6 +975,8 @@ color: black;
   @media (max-width: 880px) {
     .subjects .box-container .box{
       flex-direction: column;
+      width: 	90%;
+      margin: auto;
     }
       .subjects .box-container img{
         width: auto;
