@@ -1,167 +1,334 @@
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-ul {
-  list-style: none;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 body {
-  background: url(INFORMATIKA.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+   background-color: #3399ff;
+  background-size: cover;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
 }
 
-nav {
-  background-color: rgba(175, 188, 194, 0.7);
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
+
+.slika {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 25px;
-  -webkit-text-stroke: black 2px;
-  color: white;
-  border-bottom: 10px solid white;
-}
-nav:hover
-{
-  background-color: #0b6e9d;
-}
-#app {
-  margin: 0 auto;
+  height: 250px;
+  flex: 2 ;
+  margin-top: 15px;
 }
 
-.header {
-  margin: 30px auto;
-  border-radius: 10px;
-  padding: 20px;
-  background-color:  rgba(175, 188, 194, 0.7);
-  border: 2px solid white;
+.centriraj {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
-  width: 90%;
-  max-width: 40rem;
+
+}
+
+.dogadjaj {
   text-align: center;
-  font-size: 2rem;
-  color: white;
-}
-
-
-#clanovi ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#clanovi > li {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  background: rgba(255, 255, 255, 0.9);
-  margin: 1rem auto;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  width: 90%;
-  max-width: 40rem;
-}
-#clanovi > li:hover
-{
-  background-color:rgba(175, 188, 194, 0.7) ;
-}
-
-#clanovi h2 {
-  font-size: 2rem;
+  padding: 0px 50px;
   color: black;
-  margin: 10px 15px;
-}
-
-#clanovi button {
-  font: inherit;
-  cursor: pointer;
-  border: 1px solid white;
-  background-color: #0b6e9d;
-  color: white;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-#clanovi button:hover
-{
-  background-color:rgba(255, 255, 255, 0.9);
-
-}
-#clanovi button:hover,
-#clanovi button:active {
-  background-color: #02415e;
+  font-size: 17px;
 }
 
-.fa-phone-alt,
-.fa-envelope {
-  color: #02415e;
-  font-size: 1.4rem;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.inner {
+.nav {
+  width: 100%;
+  background-color:black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #3399ff;
+  padding: 7px 0;
+  margin-bottom: 10px;
+}
+
+.row-novi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 999px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .slika {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ikonica {
+    font-size: 0.8rem !important;
+  }
+  .ikonica i {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 699px) {
+  .row-novi {
+    flex-direction: column !important;
+  }
+  .ikonica {
+    display: none;
+  }
+  .slika{
+    flex-direction: column;
+    width: 	90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 506px) {
+  .ikonica {
+    display: block !important;
+  }
+}
+
+.padd-15ld {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Sekcija.padd-15ld {
+  margin-top: 8rem;
+  background-color: #0e0d0d;
+  color: 	#3399ff;
+  padding: 15px;
+}
+
+.Sekcija.padd-15ld h2 {
+  font-weight: 600;
+}
+
+.section-item {
+  flex: 1;
+  border: 1px solid  	#3399ff;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0.4rem;
+  padding: 0.9rem;
+}
+
+i {
+  font-size: 2.7rem;
+}
+
+.section-item .icon {
+  text-align: center;
+
+  padding: 20px;
+}
+
+.dodaj {
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  background-color:  	#3399ff;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.dodaj:hover {
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.name {
+  color:  	#3399ff;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 0.2rem;
+}
+
+
+li {
+  list-style-type: none !important;
+  color: white;
+  margin: 0.3rem 0;
+}
+
+strong {
+  letter-spacing: 0.14rem;
+}
+.footer {
+  width: 100%;
+  background-color: black;
+
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 1rem;
+  color:  	#3399ff;
+  padding: 0.2rem 0;
+  margin-top: 3rem;
+}
+
+.section-item {
+  flex: 1;
+  border: 1px solid  	#3399ff;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0.4rem;
+  padding: 0.9rem;
+}
+.section-item.novost {
+  flex: 1;
+  border: 1px solid #0e0d0d;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.section-item.novost:hover {
+  box-shadow: 0 0 20px  	#3399ff;
+
+  transition: 0.4s all ease-in-out;
+}
+
+.img-fluid {
+  width: 50%;
+}
+
+.about {
+  margin-top: 8rem;
+  background-color:  	#3399ff;
+  color: white;
+  padding: 0.9rem 0.2rem;
+}
+
+.ikonica {
+  text-align: center;
+  padding: 0.4rem;
+  width: auto;
+}
+
+.ikonica i {
   font-size: 1.2rem;
 }
 
-.inner li {
-  margin: 0px auto;
-  border-radius: 10px;
-  padding: 1rem;
+.about-icon {
+  border-radius: 7px;
+  background-color: black;
+  padding: 0.9rem;
+  flex: 1;
+  margin: 0.7rem;
   text-align: center;
-  width: 90%;
-  max-width: 40rem;
 }
-
-.inner img {
-  border-radius: 15px;
-  border: 5px solid #0b6e9d;
-}
-
-
-
-footer {
+.section-item ul {
   text-align: center;
-  color: white;
-  padding: 20px;
-  font-size: 1rem;
-  background-color: rgba(175, 188, 194, 0.7);
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+  padding-inline-start: 0px !important;
 }
-footer:hover
-{
-  background-color: #0b6e9d;
+.about-icon i {
+  color:  	#3399ff;
 }
-
-@media only screen and (max-width: 1000px) {
-  #thanks {
-    width: 600px;
-    font-size: 1.3rem;
-  }
+.fa-phone:before {
+  color:  	#3399ff;
 }
 
-@media only screen and (max-width: 600px) {
-  #thanks {
-    width: 90%;
-    font-size: 1.3rem;
-  }
+.about-icon:hover {
+  box-shadow: 0 0 1.2rem white;
+  transition: 0.4s all ease-in-out;
+}
+.novibtn {
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  background-color: black;
+  color:  	#3399ff;
+  border: none;
+  font-weight: 600;
+}
+.novibtn:hover {
+  background-color: white;
+  transition: 0.4s all ease-in-out;
 }
 
-@media only screen and (max-width: 450px) {
-  .inner img {
-    width: 250px;
-  }
-  nav {
-    font-size: 1.1rem;
-  }
+.centriraj {
+  display: flex;
+  justify-content: center;
+}
 
-  .header {
-    font-size: 1.5rem;
-    padding: 10px;
-  }
+.prvi {
+  flex: 2;
+  color: black;
+  margin: 2rem 0;
+}
 
-  footer {
-    font-size: 0.8rem;
-  }
+.drugi {
+  flex: 1;
+  margin: 2rem 0;
+  text-align: right;
+}
+
+.red {
+  flex: 1;
+}
+
+.okolo {
+  border-bottom: 1px solid black;
+  margin-right: 1rem;
+  padding: 0.4rem;
+}
+.okolo a {
+  text-decoration: none;
+  color: black;
+}
+
+.next {
+  color: black;
+
+  margin-left: 1rem;
+}
+.bar {
+  position: relative;
+  height: 0.4rem;
+  border-radius: 7px;
+  background-color: white;
+}
+
+p.naslovi {
+  text-align: left;
+  width: min-content;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.next2 {
+  display: flex;
+  padding: 0;
+}
+
+.red1 {
+  text-align: left;
+  flex: 1;
+}
+
+.red2 {
+  text-align: right;
+  flex: 1;
+}
+.Sekcija h2{
+  display: flex;
+  justify-content: center;
 }
