@@ -9,7 +9,7 @@ const app = Vue.createApp({
       <div class="dogadjaj">
         <h2>Dobrodošli!</h2>
         <p>Nording je nova web development grupa koja se prvenstveno orijentiše za izradu veb dizajna.Budite i vi naš klijent!</p>
-        <p>Takođe vam nudimo i opcije react , sa vlasnikom kompanije  <span >Dzejlana Halilovic.</span></p>
+        <p>Takođe vam nudimo i opcije react sa vlasnikom kompanije  <span >Dzejlana Halilovic.</span></p>
         <p> Student druge godine softverskog inženjerstva na Državnom univerzitetu u Novom Pazaru.</p>
         <p>Pretvaranje ideje u stvarnost je nas moto!
          Nording svakodnevno ulazi u izazov sa klijentima,
