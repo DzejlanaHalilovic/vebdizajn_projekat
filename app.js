@@ -193,7 +193,7 @@ const app = Vue.createApp({
       sekcija2: {
         id: 'manuel',
         name: 'Razvoj back-enda ',
-        Text: 'Kreiranje i razvoj back-enda složenih MERN-stack aplikacija,uz poznavanje React.js i Vue.js i mogućnost kreiranja full-stack aplikacije u zavisnosti od želje klijenta.Programeri NWD tima vode računa o osiguravanju podataka naših klijenata.Pogledajte neke od naših projekata u nastavku! ',
+        Text: 'Kreiranje i razvoj back-enda složenih MERN-stack aplikacija,uz poznavanje React.js i Vue.js i mogućnost kreiranja full-stack aplikacije u zavisnosti od želje klijenta.Kompanija Nording vodi računa o osiguravanju podataka naših klijenata.Pogledajte neke od naših projekata u nastavku! ',
         
       },
 
